@@ -3,14 +3,64 @@
 <head>
     <meta charset="utf-8">
     <title>JS-Meteo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 
 </head>
-<body>
 
+<body class="container">
 
+    <div class="city_name mr-5 ml-5 mt-4" id="city_name1"> </div>
 
+    <div class="bouton_class text-center mt-4">
+
+        <input type="text" name="city_name" id="city_name">
+        <input type="button" id="bouton">
+    </div>
+
+    <div class="date text-center mt-5" id="date"> test date </div>
+
+    <div class="temperature_infos mt-5">
+
+        <div class="temperature" id="temperature"> </div>
+
+        <div class="infos" id="infos">
+
+            <div> température maximale :
+            <span id="temp_max"> </span>
+            </div>
+
+            <div> température minimale :
+            <span id="temp_min"> </span>
+            </div>
+
+            <div> Pression atmosphérique :
+            <span id="pression"> </span>
+            </div>
+
+            <div> Vitesse du vent :
+            <span id="vent">  </span>
+            </div>
+
+            <div> Humidité :
+            <span id="humidite"> </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="principale_bas">
+
+        <div class="longitude"> Longitude : <span id="longitude"> </span> </div>
+
+        <div class="lattitude"> Lattitude : <span id="lattitude"> </span> </div>
+
+    </div>
+
+    <div class="map mt-1" id="map"> </div>
 
 
 <script src="exercice.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.city_name {
+    border: solid;
+    text-align: center;
+    font-size: 24px;
+}
+
+.temperature_infos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+    border: solid;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width:  50%;
+    border: solid;
+}
+
+.principale_bas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.longitude {
+    display: flex;
+    border: solid;
+    width: 50%;
+}
+
+.lattitude {
+    display: flex;
+    border: solid;
+    width: 50%;
+}
+
+.map {
+    border: solid;
+    height: 200px;
+}

@@ -8,56 +8,64 @@
 
 </head>
 
-<body class="container">
+<body>
 
-    <div class="city_name mr-5 ml-5 mt-4" id="city_name1"> </div>
+    <div class="container" id="container">
 
-    <div class="bouton_class text-center mt-4">
+        <div class="city_name mr-3 ml-3 mt-3" id="city_name"> LONDON </div>
 
-        <input type="text" name="city_name" id="city_name">
-        <input type="button" id="bouton">
-    </div>
+        <div class="bouton_class text-center mt-3 mb-3">
 
-    <div class="date text-center mt-5" id="date"> test date </div>
-
-    <div class="temperature_infos mt-5">
-
-        <div class="temperature" id="temperature"> </div>
-
-        <div class="infos" id="infos">
-
-            <div> température maximale :
-            <span id="temp_max"> </span>
-            </div>
-
-            <div> température minimale :
-            <span id="temp_min"> </span>
-            </div>
-
-            <div> Pression atmosphérique :
-            <span id="pression"> </span>
-            </div>
-
-            <div> Vitesse du vent :
-            <span id="vent">  </span>
-            </div>
-
-            <div> Humidité :
-            <span id="humidite"> </span>
-            </div>
+            <input type="text" name="city_name" id="champ_city_name">
         </div>
 
+        <div class="bt_valide text-center">
+
+            <div type="submit" id="bouton"> Valider </div>
+
+        </div>
+
+        <div class="date text-center mt-3 mb-4" id="date"> test date </div>
+
+        <div class="temperature_infos mt-3 mb-3">
+
+            <div class="temperature" id="temperature">  15 </div>
+
+            <div class="infos" id="infos">
+
+                <div> température maximale :
+                <span id="temp_max"> </span>
+                </div>
+
+                <div> température minimale :
+                <span id="temp_min"> </span>
+                </div>
+
+                <div> Pression atmosphérique :
+                <span id="pression"> </span>
+                </div>
+
+                <div> Vitesse du vent :
+                <span id="vent">  </span>
+                </div>
+
+                <div> Humidité :
+                <span id="humidite"> </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="principale_bas">
+
+            <div class="longitude"> Longitude : <span id="longitude"> </span> </div>
+
+            <div class="lattitude"> Lattitude : <span id="lattitude"> </span> </div>
+
+        </div>
+
+        <div class="map mt-1" id="map"> </div>
     </div>
-
-    <div class="principale_bas">
-
-        <div class="longitude"> Longitude : <span id="longitude"> </span> </div>
-
-        <div class="lattitude"> Lattitude : <span id="lattitude"> </span> </div>
-
-    </div>
-
-    <div class="map mt-1" id="map"> </div>
 
 
 <script src="exercice.js"></script>

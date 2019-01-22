@@ -43,7 +43,7 @@ function ajaxRequest()
             var seconds = "0" + date.getSeconds();
 
             // Display date time in MM-dd-yyyy h:m:s format
-            var convdataTime = month+'-'+day+'-'+year+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+            var convdataTime = day+'-'+month+'-'+year+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
             document.getElementById('date').innerHTML = convdataTime;
 

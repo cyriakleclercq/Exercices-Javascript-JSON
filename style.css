@@ -3,8 +3,21 @@ body {
     margin: 0;
 }
 
+#container {
+    background-color: #00796B;
+    color: whitesmoke;
+    height: 700px
+}
+
+#bouton {
+
+    display: inline-block;
+    color: #00796B;
+    background: white;
+    padding: 5px 5px 5px 5px;
+}
+
 .city_name {
-    border: solid;
     text-align: center;
     font-size: 24px;
 }
@@ -12,47 +25,45 @@ body {
 .temperature_infos {
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
+    height: 20%;
 }
 
 .temperature {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    font-weight: bold;
-    width: 50%;
-    border: solid;
+    font-size: 100px;
+    width: 45%;
+    margin-left: 10%;
 }
 
 .infos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    width:  50%;
-    border: solid;
+    width:  40%;
 }
 
 .principale_bas {
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 100%;
 }
 
 .longitude {
+    margin-left: 10%;
     display: flex;
-    border: solid;
-    width: 50%;
+    width: 20%;
 }
 
 .lattitude {
     display: flex;
-    border: solid;
-    width: 50%;
+        width: 20%;
 }
 
 .map {
     border: solid;
-    height: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 40%;
 }

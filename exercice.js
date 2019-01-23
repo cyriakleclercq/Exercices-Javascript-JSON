@@ -1,12 +1,15 @@
 function ajaxRequest()
 {
+
     var xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = function() {
 
+        document.getElementById('map').innerHTML = "";
+
         if (this.readyState == 4 && this.status == 200) {
 
-            document.getElementById('city_name').innerHTML = this.responseText;
+            document.getElementById('nom').value = this.responseText;
 
             var objMeteo = this.responseText;
 
@@ -14,7 +17,7 @@ function ajaxRequest()
 
         var weather = JSON.parse(objMeteo);
 
-        document.getElementById('city_name').innerHTML = weather.name;
+        document.getElementById('nom').value = weather.name;
 
         // Unixtimestamp
         var unixtimestamp = weather.dt;
@@ -48,17 +51,17 @@ function ajaxRequest()
 
         document.getElementById('date').innerHTML = convdataTime;
 
-        document.getElementById('temperature').innerHTML = weather.main.temp + "°C";
+        document.getElementById('temperature').innerHTML = weather.main.temp + " °C";
 
-        document.getElementById('temp_max').innerHTML = weather.main.temp_max + "°C";
+        document.getElementById('temp_max').innerHTML = weather.main.temp_max + " °C";
 
-        document.getElementById('temp_min').innerHTML = weather.main.temp_min + "°C";
+        document.getElementById('temp_min').innerHTML = weather.main.temp_min + " °C";
 
-        document.getElementById('pression').innerHTML = weather.main.pressure + "Pa";
+        document.getElementById('pression').innerHTML = weather.main.pressure + " Pa";
 
-        document.getElementById('vent').innerHTML = weather.wind.speed*3.6 + "km/h";
+        document.getElementById('vent').innerHTML = weather.wind.speed*3.6 + " km/h";
 
-        document.getElementById('humidite').innerHTML = weather.main.humidity + "%";
+        document.getElementById('humidite').innerHTML = weather.main.humidity + " %";
 
         document.getElementById('longitude').innerHTML = weather.coord.lon + " °";
 
@@ -89,3 +92,4 @@ function ajaxRequest()
 }
 
 document.getElementById('bouton').addEventListener('click', ajaxRequest);
+

@@ -12,6 +12,9 @@ body {
 input {
     background: transparent;
     border-style: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 
 }
 
@@ -27,7 +30,7 @@ hr {
     display: inline-block;
     color: #00796B;
     background: white;
-    border-radius: 20px !important;
+    border-radius: 20px;
 }
 
 

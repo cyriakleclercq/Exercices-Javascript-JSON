@@ -9,18 +9,27 @@ body {
     height: 700px
 }
 
+input {
+    background: transparent;
+    border-style: none;
+
+}
+
+hr {
+
+    margin-left: 40%;
+    margin-right: 40%;
+    background: white;
+}
+
 #bouton {
 
     display: inline-block;
     color: #00796B;
     background: white;
-    padding: 5px 5px 5px 5px;
+    border-radius: 20px !important;
 }
 
-.city_name {
-    text-align: center;
-    font-size: 24px;
-}
 
 .temperature_infos {
     display: flex;

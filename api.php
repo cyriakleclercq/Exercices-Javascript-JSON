@@ -8,7 +8,7 @@
 
 $ch = curl_init();
 
-$ville = (isset($_GET['city_name']) ? $_GET['city_name']: null);
+$ville = (isset($_GET['ville']) ? $_GET['ville'] : null);
 
 curl_setopt($ch, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=".$ville."&units=metric&&APPID=65be0b663cbeebb1351f27dffc4a1a4c");
 

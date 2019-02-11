@@ -1,4 +1,4 @@
-function ajaxRequest()
+    function ajaxRequest()
 {
 
     var xhttp = new XMLHttpRequest();
